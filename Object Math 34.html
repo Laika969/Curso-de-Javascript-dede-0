@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Objec Math 4</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+		<p>Math.floor() combinado con Math.random para que devuelva un numero aleatorio del 0 al 11</p>
+
+		<button onclick="miFun()">Pruebalo</button>
+
+		<p id="div1"></p>
+
+		<script>
+			function miFun() {
+			document.getElementById("div1").innerHTML = Math.floor(Math.random() * 11);
+			}
+		</script>
+	</body>
+</html>

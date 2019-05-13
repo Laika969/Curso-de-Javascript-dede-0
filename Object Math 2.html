@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Objec Math 2</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+		<p>Math.min() devuelve el valor más bajo.</p>
+
+		<button onclick="miFunc()">Pruebalo</button>
+
+		<p id="div1"></p>
+
+		<script>
+			function miFunc() {
+			document.getElementById("div1").innerHTML = Math.min(23, 150, 21, 20, -8);
+			//document.getElementById("div1").innerHTML = Math.max(23, 150, 21, 20, -8); hace lo mismo pero devolviendo el número maximo.
+			}
+		</script>
+	</body>
+</html>

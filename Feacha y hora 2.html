@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fehas y hora actuales.</title>
+		<style>
+			p {font: 14px normal arial; verdana, helvetica;}
+		</style>
+		<script>
+			//var miFecha = new Date();
+			function diLaFechayHora() {
+				var salida = "";
+				var d = new Date();
+				var mes = new Array();
+				mes[0] = "Enero";
+				mes[1] = "Febrero";
+				mes[3] = "Marzo";
+				mes[4] = "Abril";
+				mes[5] = "Mayo";
+				mes[6] = "Junio";
+				mes[7] = "Julio";
+				mes[8] = "Agosto";
+				mes[9] = "Septiembre";
+				mes[10] = "Octubre";
+				mes[11] = "Noviembre";
+				mes[12] = "Diciembre";
+				var m = mes[d.getMonth()];
+				var ahora = new Date();
+				salida += "<br />Fecha: " + ahora.getDate();
+				salida += "<br />Mes: " + m;
+				salida += "<br />Año: " + ahora.getFullYear();
+				salida += "<br />Horas: " + ahora.getHours();
+				salida += "<br />Minutos: " + ahora.getMinutes();
+				salida += "<br />Segundos: " + ahora.getSeconds();
+				document.getElementById("div1").innerHTML = salida;
+			}
+
+
+		</script>
+	</head>
+	<body>
+		La fecha y hora actuales son:<br/>
+		<div id="div1"></div>
+		<script>
+			diLaFechayHora();
+		</script>
+		<input type="button" onclick="location.reload()" value="Recargar" />
+	</body>
+</html>

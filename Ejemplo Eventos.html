@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplos eventos</title>
+	<script>
+		function diHola() {
+			alert("Hola a todos");
+			//...Aquí peuden ir
+			//Otras declaraciones
+
+		function diAdios() {
+			alert("Adios");
+		}
+	</script>
+</head>
+<body>
+	<center><h2>onClick Event</h2></center>
+	<!-- Boton, al se rpulsado manda un mensaje en un alert -->
+	<input type="button" name="Boton js" value="Pulsame" onclick="alert('¡ Hola, gracias por pulsarme !')">
+	<br>
+	<center><h2>onMouseover & onMouseout Event</h2></center>
+	<!-- Al colocar el click sobre la imagen,cambia la imagen, y al quitarla cambia igual.-->
+	<img src="https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_960_720.jpg" onmouseover="this.src='https://cdn.pixabay.com/photo/2018/02/13/23/41/nature-3151869_960_720.jpg';" onmouseout="this.src='https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_960_720.jpg';" alt="imagen">
+	</center>
+
+</html>

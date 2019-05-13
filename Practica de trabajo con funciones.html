@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplo de funciones</title>
+	<script>
+		function informeBoton (botonId, botonNombre, botonValor) {
+			var userMessage1 ("Id del boton: " + botonId + "/n");
+			var userMessage2 ("Nombre del boton: " + botonNombre + "/n");
+			var userMessage3 ("Valor del boton: " + botonValor);
+			alert(userMessage1 + userMessage2 + userMessage3);
+		}
+	</script>
+</head>
+<body>
+	<input type="button" id="id1" name="Boton izqueirdo" value="Izquierdo" onclick="informeBoton(this.id, this.name, this.valor)">
+	<input type="button" id="id2" name="Boton centro" value="Centro" onclick="informeBoton(this.id, this.name, this.valor)">
+	<input type="button" id="id3" name="Boton derecho" value="Derecho" onclick="informeBoton(this.id, this.name, this.valor)">
+</body>
+</html>

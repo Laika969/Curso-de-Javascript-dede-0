@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Objec Math 2</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+		<p>Math.round() devuelve el número entero más cercano.</p>
+
+		<button onclick="miFunc()">Pruebalo</button>
+
+		<p id="div1"></p>
+
+		<script>
+			function miFunc() {
+			document.getElementById("div1").innerHTML = Math.round(2.4);
+			//document.getElementById("div1").innerHTML = Math.ceil(2.4);
+			//EEl segundo es más preciso y siempre redondea hacia arriba.
+			//document.getElementById("div1").innerHTML = Math.floor(2.4);
+			//Este siempre redondea hacia abajo
+			}
+		</script>
+	</body>
+</html>
